@@ -46,7 +46,7 @@ header {
   text-align: center;
   font-family: "Young Serif", serif;
   font-size: x-large;
-  position: sticky;
+  /* position: sticky; */
   top: 0px;
 }
 .black2 {
