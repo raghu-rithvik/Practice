@@ -1,12 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Mooli&family=Poppins:wght@100&family=Young+Serif&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Poppins:wght@100&family=Sofia&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 .image {
-  height: auto;
-  width: auto;
+  height: 50vmin;
+  /* width: 10vmin; */
   display: flex;
   justify-content: center;
   text-align: center;
-  width: 20vmin;
+  /* width: 20vmin; */
   margin: auto;
   box-sizing: border-box;
 }
@@ -22,7 +23,7 @@
   border-color: black;
   color: white;
   /* text-align: center; */
-  font-family: poppins;
+  font-family: 'Alice', serif;
   margin: auto;
   box-sizing: border-box;
   border-radius: 8px;
@@ -68,6 +69,7 @@ header {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  padding-inline-start: 0;
 }
 .name {
   text-align: center;
@@ -76,21 +78,23 @@ header {
 .edu {
   display: grid;
   grid-template-columns: auto auto auto;
+  font-family: 'Alice', serif;
 }
-.box {
-  background-color: rgb(78, 76, 76);
-  padding: 8px 5px;
-  margin: 0 5px;
-  border-radius: 5px;
-  height: 50vh;
-  
-}
+
 .ed {
   text-align: left;
   font-size: 5vmin;
   padding-left: 20px;
   padding-top: 20px;
+  font-family: 'Sofia', cursive;
 }
+.ed1 {
+    text-align: left;
+    font-size: 5vmin;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-family: 'Aboreto';
+  }
 @media (max-width: 1000px) {
   .edu {
     display: flex;
@@ -108,6 +112,7 @@ header {
   padding: 8px 5px;
   margin: 10px 0px;
   border-radius: 5px;
+  font-family: 'Alice', serif;
 }
 .pjt h3 {
   text-align: left;
@@ -120,19 +125,22 @@ header {
   margin: 0 5px;
   border-radius: 5px;
   width: fit-content;
+  font-family: 'Alice', serif;
 }
 .exp {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  
 }
 .ex {
   border-radius: 5px;
   padding: 5px 8px;
   text-align: justify;
-  height: 50vh;
+  height: max-content;
   width: 60vw;
+  font-family: 'Alice', serif;
   background-color: rgb(78, 76, 76);
 }
 .box1 {
@@ -152,6 +160,7 @@ header {
   margin: 0 auto; /* Center the container horizontally within its parent */
   border-radius: 5px;
   max-height: 2%;
+  font-family: 'Alice', serif;
 }
 
 li a{
@@ -166,7 +175,7 @@ nav button{
     box-shadow: none;
     cursor: pointer;
     color: white;
-    font-family: poppins;
+    font-family: 'Alice', serif;
     border: none;
     /* width: 15vw; */
     /* font-size: 100%; */
@@ -224,5 +233,48 @@ footer span i{
     flex-direction: row;
     justify-content: center;
     font-size: x-large;
+    margin: 10px;
+    font-family: 'Sofia', cursive;
+}
+.box h2{
+    margin: 5px;
+}
+/* .box p{
+    margin: 8px;
+} */
+.box h4{
+    margin: 0px;
+}
+.box p{
+    text-align: left;
+    margin: 0px;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(78, 76, 76);
+    align-items: center;
+  padding: 8px 5px;
+  margin: 5px 5px;
+  border-radius: 5px;
+  height: max-content;
+  
+}
+.he{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.para{
+    display: grid;
+    grid-template-columns: auto auto;
+    /* background-color: rgb(78, 76, 76); */
+    width: 100%;
+    align-items: center;
+    margin-top: 15px;
+    /* flex-direction: column; */
+    column-gap: 5px;
+    row-gap: 5px;
     margin: 10px;
 }
