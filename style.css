@@ -273,7 +273,6 @@ footer span i{
     width: 100%;
     align-items: center;
     margin-top: 15px;
-    /* flex-direction: column; */
     column-gap: 5px;
     row-gap: 5px;
     margin: 10px;
