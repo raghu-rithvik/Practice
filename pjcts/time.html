@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Projects</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        let a
+        let time;
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        setInterval(()=>{
+        a=new Date();
+        time=a.getHours() +":"+a.getMinutes()+":"+a.getSeconds()
+        d=a.toLocaleDateString(undefined, options)
+    document.getElementById("time").innerHTML=time +" on "+d},1000)
+        // console.log(a);
+        // console.log(time);
+        // console.log(d);
+    </script>
+</head>
+<body>
+    <div class="jumbotron margins">
+        <p>Time & Date Info: <span id="time"></span></p>
+        <hr>
+        <p>Wanna know about the time arounf the world?, Click the button to know more..!!</p>
+        <button class="btn btn-primary" id="btn" onclick="window.open('https://www.timeanddate.com/worldclock/')">Know more..</button>
+    </div>
+
+    
+</body>
+</html>

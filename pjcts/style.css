@@ -1,0 +1,48 @@
+.margins{
+    margin: 5vmin 50vmin;
+    padding: 3vw;
+    border-radius: 3px;
+}
+@media (max-width:920px) {
+    .margins{
+        margin: 5vmin 50px;
+    }
+}
+body{
+    background-color: rgb(33, 32, 32);
+}
+.note{
+    background-color: rgb(85, 84, 84);
+    margin: 10px 2px 10px 10px;
+    padding: 10px 10px;
+    color: azure;
+    width: 210px;
+    text-align: justify;
+    height: max-content;
+    border-radius: 1em;
+    box-shadow: 0 5px 8px #afafaf;
+}
+.items h2{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.items{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+.items span{
+    position: relative;
+    left: 124px;
+}
+.icon-button {
+    background-color: #afafaf;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 2vw;
+    font-size: 16px;
+    align-items: flex-end;
+    color: black;
+}
