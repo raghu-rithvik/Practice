@@ -147,7 +147,7 @@ header {
   padding: 2vh 2vw;
   border-radius: 5px;
   margin: 0 8px;
-  text-align: center;
+  /* text-align: center; */
 }
 .intr {
   display: flex;
@@ -276,4 +276,12 @@ footer span i{
     row-gap: 5px;
     margin: 10px;
     text-align: left;
+}
+.box1 ul li{
+  list-style-type: none;
+    margin: 10px 0;
+}
+.box1 ul li span{
+  color: #b54769;
+  font-size: 14px;
 }
