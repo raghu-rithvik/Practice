@@ -45,7 +45,23 @@ body{
     font-size: 16px;
     align-items: flex-end;
     color: black;
+    margin-top: 8px;
 }
 .Htwo{
     color: white;
+}
+.hidden{
+    display: none;
+
+}
+.hidden h2{
+    background-color: azure;
+    border-radius: 5px;
+    color: black;
+}
+.hidden p{
+    background-color: mintcream;
+    border-radius: 5px;
+    color: black;
+    height: max-content;
 }
