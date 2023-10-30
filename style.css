@@ -162,6 +162,16 @@ header {
   max-height: 2%;
   font-family: 'Alice', serif;
 }
+@media (max-width:1000px) {
+  .ex{
+    width: 100%;
+  }
+  .intr{
+    width: 100%;
+    max-width: none;
+  }
+  
+}
 
 li a{
     text-decoration: none;
