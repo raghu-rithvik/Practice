@@ -59,6 +59,7 @@ nav ul li a:hover::after{
 }
 .intext{
     /* width: 100%; */
+    max-width: 500px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -131,4 +132,24 @@ ul li span{
 }
 ul li span:hover{
     background: #a6a7a7;
+}
+/* --------------------------------------------------------------- media-tags ------------------------------------------------------------------ */
+@media (max-width:450px) {
+    .intext{
+        justify-content: center;
+    }
+    .intext input{
+        width: 3vmin;
+    }
+    .intext button{
+        padding: 16px 20px;
+    }
+
+    
+}
+@media (max-width:320px) {
+    .col{
+        display: block;
+    }
+    
 }
