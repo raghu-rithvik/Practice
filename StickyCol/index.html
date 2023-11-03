@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StickyCol</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Weather App</a></li>
+          <li><a href="../ToDo/index.html">To Do App</a></li>
+          <li><a href="index.html">Responsive Table</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="wrap-table">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col" class="sticky-col">Customer</th>
+            <th scope="col">Status</th>
+            <th scope="col">Course</th>
+            <th scope="col">Enrolled</th>
+            <th scope="col">Progress</th>
+            <th scope="col">Date</th>
+            <th scope="col" class="sticky-col sticky-col-right">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row" data-label="Customer" class="sticky-col">
+                <div class="user-info">
+              <label><input type="checkbox" /></label>
+              <img
+                class="user-photo"
+                src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"/>
+              <div>
+                <div class="user__name">Lindsay Walton</div>
+                <div class="user__email">lindsay@example.com</div>
+              </div>
+            </td>
+            <td data-label="Status">
+              <span class="user-badge">Enrolled</span>
+            </td>
+            <td data-label="Course">
+              <span>HTML</span>
+            </td>
+            <td data-label="Enrolled">
+              <span>Member</span>
+            </td>
+            <td data-label="Progress">
+              <progress value="32" max="100">32%</progress>
+            </td>
+            <td data-label="Date">
+              <span>09/09/2023</span>
+            </td>
+            <td data-label="Action" class="sticky-col sticky-col-right">
+              <button class="btn btn-primary">Edit</button>
+            </td>
+          </tr>
+        </div>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
