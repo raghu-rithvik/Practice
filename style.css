@@ -114,6 +114,11 @@ header {
   border-radius: 5px;
   font-family: 'Alice', serif;
 }
+.pro a{
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: 700;
+}
 .pjt h3 {
   text-align: left;
   font-size: 3vmin;
