@@ -50,8 +50,11 @@ nav ul li a:hover::after {
   width: 100%;
   container-type: inline-size;
   container-name: table;
-  max-width: 1000px;
-  margin: 100px auto 0;
+  /* max-width: 1000px; */
+  /* margin: 100px auto 0; */
+}
+.wrap-table::-webkit-scrollbar{
+  display: none;
 }
 table {
   width: 100%;
@@ -144,7 +147,36 @@ progress::-webkit-progress-value {
   transition: 0.3s;
   cursor: pointer;
 }
-
+.panel{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 1000px;
+  margin: 100px auto 0;
+  /* overflow: hidden; */
+}
+#resize-btn{
+  width: 14px;
+  height: 100%;
+  cursor: e-resize;
+  position: absolute;
+  display: flex;
+  align-items: start;
+  top: 0;
+  left: calc(100% + 3px);
+  border: none;
+  background: #222;
+  padding: 0;
+}
+#resize-btn span{
+  width: 4px;
+  height: 40px;
+  background: #374151;
+  margin-top: 6px;
+  border-radius: 10px;
+  display: block;
+}
 /* --------------------------------------------------------------- media-tags ------------------------------------------------------------------ */
 @media (min-width: 400px) {
   .sticky-col {
