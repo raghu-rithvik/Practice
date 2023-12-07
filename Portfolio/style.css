@@ -105,6 +105,10 @@ header {
     width: 70vw;
     margin-top: 10px;
   }
+  .ex {
+    width: 70vw;
+    margin-top: 10px;
+  }
 }
 .pro {
   /* display: flex; */
@@ -133,8 +137,8 @@ header {
   font-family: 'Alice', serif;
 }
 .exp {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-rows: auto auto ;
   align-items: center;
   justify-content: center;
   
@@ -265,6 +269,17 @@ footer span i{
     margin: 0px;
 }
 .box {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(78, 76, 76);
+    align-items: center;
+  padding: 8px 5px;
+  margin: 5px 5px;
+  border-radius: 5px;
+  height: max-content;
+  
+}
+.ex {
     display: flex;
     flex-direction: column;
     background-color: rgb(78, 76, 76);
