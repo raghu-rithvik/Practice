@@ -304,8 +304,22 @@ footer span i{
     margin-top: 15px;
     column-gap: 5px;
     row-gap: 5px;
-    margin: 10px;
+    margin-left: 25%;
     text-align: left;
+}
+.para-e{
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  align-items: center;
+  margin-top: 15px;
+  column-gap: 5px;
+  row-gap: 5px;
+  margin-left: 10px;
+  text-align: left;
+}
+.list-items{
+  margin-right: 20px;
 }
 .box1 ul li{
   list-style-type: none;
